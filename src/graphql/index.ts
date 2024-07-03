@@ -5,6 +5,7 @@ const graphQlServerCreate = async () => {
     const server = new ApolloServer({
         // typeDefs: is a Shema Definition Language (SDL) string that describes the shape of your data in the runtime.,
         typeDefs: `
+            ${User.typeDefs}
             type Query {
                 ${User.queries}
             } 
