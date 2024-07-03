@@ -6,7 +6,7 @@ const graphQlServerCreate = async () => {
         // typeDefs: is a Shema Definition Language (SDL) string that describes the shape of your data in the runtime.,
         typeDefs: `
             type Query {
-                hello: String
+                ${User.queries}
             } 
             type Mutation {
                 ${User.mutations}
